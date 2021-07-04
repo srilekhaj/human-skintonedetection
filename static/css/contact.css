@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea ,#typemail{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+
+#column1 {
+    float: left;
+    width: 50%;
+
+    padding: 20px;
+  
+  }
+
+  @media screen and (max-width: 700px) {
+
+    #column1{
+      width: 100%;
+    }
+  }

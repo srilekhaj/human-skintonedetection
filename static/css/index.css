@@ -1,0 +1,108 @@
+
+
+.fluid-container .indexpagebackground{
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.home_image{
+  display: inline-block;
+  position: relative;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+
+
+.index_page_buttons{
+  margin-top: 50px;
+  display: inline-block;
+  position: relative;
+  height: 250px;
+  background-color: rgba(1, 4, 22, 0.8);
+  width: 50%;
+  padding: 50px;
+  color: azure;
+
+}
+
+.index_page_buttons a .btn{
+  border:2px solid white
+}
+
+
+
+
+.grid-containerindex {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 0;
+
+}
+
+.marginph{
+  margin: 40px 65px 40px 65px;
+}
+
+.paragraghsection{
+  padding: 100px 50px 0px 50px ;
+  height: 400px;
+  
+}
+.paragraghsection p{
+text-align: center;
+  font-family:Pattaya ;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .home_image{
+   
+    height: 300px;
+  }
+
+  .paragraghsection{
+    padding: 50px 50px 0px 50px ;
+  }
+}
+@media screen and (max-width: 700px) {
+
+  .home_image{
+    height: 180px;
+    width: 100%;
+  }
+  
+  .marginph{
+    margin: 10px;
+  }
+  
+  .paragraghsection{
+    height: 700px ;
+  }
+  
+  .photocaption{
+    font-size: 17px;
+  }
+  
+  .index_page_buttons h1{
+    font-size: 1.5rem;
+  }
+
+  .index_page_buttons{
+    height: 200px;
+    width: 70%;
+    padding: 30px;
+  }
+  .index_page_buttons p{
+    font-size: 0.5rem;
+  }
+
+  .index_page_buttons a button{
+    font-size: 0.6rem;
+  }
+}
+

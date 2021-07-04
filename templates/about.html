@@ -1,0 +1,79 @@
+<!-- load base.html file and statics -->
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<!-- start body of about us page -->
+ 
+<section class="aboutbody">
+    <!-- heading of website -->
+    <center id="heading">HumanSkintone..</center>
+    <div  align="center">
+
+        <div class="grid-container1">
+            <div class="card text-center " style="background-image: radial-gradient( circle 300px at 8% 89.3%,  rgba(20,157,208,1) 0%, rgba(140,63,226,1) 90% );">
+
+                <div class="card-body item1">
+                    <p class="card-title" >About Us!</p>
+                    <p class="card-text" style="color: pink;"><em>Look to a day when people will not be judged by the color of their skin.</em></p>
+                    <!-- <a href="#" class="btn btn-primary">about us</a> -->
+                </div>
+            </div>
+            <div class="item2" >
+            <img src="{% static 'img/skin-tone-chart-5.jpg' %}" alt="no image" class="headingimage"></div>
+        </div>
+
+
+    </div>
+
+    
+
+<!--  text in about page      -->
+
+<section> 
+   
+    <div class="aboutext">
+            
+            <p id="paragraph1"><b>Project</b><br/>This is our awesome project, which is a responsive site designed using front-end tech like HTML CSS js.
+                Here, the user is supposed to upload the images via direct capturing or browse the image and to make
+                this interactive with
+                machine learning we used Django.</p>
+            <p id="paragraph2"><b>Working</b><br/> The images are processed by stages internally like data pre-processing, featured engineering, it
+                pre-processes those images fetching relevant datasets and checks suitable to this model is appropriately
+                match with the given image.</p>
+            <p id="paragraph3"><b>Techniques</b><br/>
+                By using this structured algorithmic technique the model is trained with the selected algorithm, it will
+                predict the skin tone of the face present in the image and classify it into fairly mild dark. Finally
+                the result is displayed on the web page.
+            </p>
+
+    </div>
+</section>
+
+    <!-- images in about us page -->
+     
+        <div class="grid-container" align="center">
+         
+            <div class="item1">
+                <img class="rowcolumnimage" src="{% static 'img/skin-tone-chart-2.jpg' %}" alt="image not loaded"></div>
+        <div class="item2">    
+                <img class="rowcolumnimage" src="{% static 'img/skin-tone-chart-4.jpg'%}" alt="image not loaded" ></div>
+                <div class="item3">
+                <img class="rowcolumnimage" src="{% static 'img/skin-tone-chart-1.jpg' %}" alt="" srcset="">
+            </div>
+            <div class="item4">
+                <img class="rowcolumnimage" src="{% static 'img/skin-tone-chart-3.jpg' %}" alt="" srcset="">
+               
+        </div>
+        </div>    
+        
+      
+
+</section>  
+
+         
+{% endblock %}
+        
+

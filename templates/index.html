@@ -1,0 +1,76 @@
+<!-- load base.html file and statics -->
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+
+
+<div class="fluid-container">
+  <div class="indexpagebackground">
+  <center >
+    <p id="heading">HumanSkinTone</p>
+  </center>
+    <section align="center">
+      <div class="home_image" >
+        <div class="grid-containerindex" align="center">
+            
+          <div class="item1 marginph">
+              <img class="rowcolumnimage" src="{% static 'img/12.jpg' %}" alt="image not loaded">
+              <div class="caption" align="center">
+                <h3 class="photocaption" style="color: white;"><b>Skintone : Fair</b></h3>
+            </div>
+            </div>
+      <div class="item2 marginph">    
+              <img class="rowcolumnimage" src="{% static 'img/14.jpg'%}" alt="image not loaded" >
+              <div class="caption" align="center">
+                <h3 class="photocaption" style="color: white;" ><b>Skintone : Mild</b></h3>
+            </div>
+            </div>
+              <div class="item3 marginph">
+              <img class="rowcolumnimage" src="{% static 'img/15.jpg' %}" alt="" srcset="">
+              <div class="caption" align="center">
+                <h3 class="photocaption" style="color: white;" ><b>Skintone : Dark</b></h3>
+            </div>
+
+          </div>
+          
+      </div>
+      </div>
+          
+    </section>
+
+        
+    <!-- buttons for upload image -->
+    <section  align="center">
+    <div class="index_page_buttons" >
+      
+        <h1 style="font-family: HappyTimesattheIKOBRegular;">Find Your Skintone</h1>
+        <p style="font-family: MusicalRegular;">Care not what they say about the color of your skin let the brilliant light of your
+          soul blind them.</p>
+        <a href="skintone.html" style="float: left; "><button class="btn btn-primary">Upload Image</button></a>
+        <a href="capture.html" style="float: right;"><button class="btn btn-primary ">Capture Image</button></a>
+    </div>    
+    </section>
+
+
+    <section  class="paragraghsection" align="center">            
+                <p id="paragraph1" style="color: rgb(188, 222, 252);">Human skin color detection, for the most part, is used for human face detection. 
+                  It is one of the best approaches for finding and extracting a person’s face in a given picture.
+                  Often it is understood that, for individuals of different races, the fragments skin tones change for some degree. 
+                  </p>
+                <p id="paragraph2" style="color: rgb(250, 187, 187);">The three primary spaces for recognizing a skin are RGB (Red, Green, Blue), 
+                  YCbCr (Luminance, Chrominance) and HSV (Hue, Saturation, Value) color models.To feature the color of human skin, use different color spaces are accessible.</p>
+                <p id="paragraph3" style="color: rgb(249, 160, 252);">
+                  A color model is a term that denotes an abstract model for describing the 
+                  representation of colors as tuples of numbers, usually of three or four values, called color components or color coordinates. 
+                  Together with the method of interpreting this data.
+                </p>
+    </section>
+
+  </div>
+</div>
+
+
+{% endblock %}    
